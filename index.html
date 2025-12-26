@@ -1,224 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <section class="hero">
-  <div class="hero__container">
+  <header class="header-section">
+    <img src="./assets/images/logo.svg" alt="" >
+     <a href="#" class="appointment-cta__btn">
+        <span class="appointment-cta__btn-icon">↗</span>
+        <span class="heder-text-btn">Register Now</span>
+        
+      </a>
+  </header>
 
-    <!-- LEFT CONTENT -->
-    <div class="hero__content">
-      <h1 class="hero__title">
-        Discover Gurugram’s<br />
-        <span>Top 30+ Schools</span>
-      </h1>
+  <section class="hero">
+    <div class="hero__container">
 
-      <p class="hero__subtitle">ALL IN ONE PLACE</p>
+      <!-- LEFT CONTENT -->
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Discover Gurugram’s<br />
+          <span>Top 30+ Schools</span>
+        </h1>
 
-      <div class="hero__event">
-        <div class="hero__event-left">
-          <strong>Apparel House</strong>
-          <span>Sec 44, Gurugram</span>
+        <p class="hero__subtitle">ALL IN ONE PLACE</p>
+
+        <div class="hero__event">
+          <div class="hero__event-left">
+            <strong>Apparel House</strong>
+            <span>Sec 44, Gurugram</span>
+          </div>
+
+          <div class="hero__event-divider"></div>
+
+          <div class="hero__event-right">
+            <strong>2–3 August 2025</strong>
+            <span>Sat–Sun | 10AM – 6PM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER IMAGES -->
+      <div class="hero__gallery" aria-hidden="true">
+
+        <div class="gallery-col col-1">
+          <img src="./assets/images/img-1.jpg">
+          <img src="./assets/images/img-2.jpg">
+          <img src="./assets/images/img-3.jpg">
+          <img src="./assets/images/img-1.jpg">
+          <img src="./assets/images/img-2.jpg">
+          <img src="./assets/images/img-3.jpg">
         </div>
 
-        <div class="hero__event-divider"></div>
+        <div class="gallery-col col-2">
+          <img src="./assets/images/img-4.jpg">
+          <img src="./assets/images/img-5.jpg">
+          <img src="./assets/images/img-6.jpg">
+          <img src="./assets/images/img-4.jpg">
+          <img src="./assets/images/img-5.jpg">
+          <img src="./assets/images/img-6.jpg">
+        </div>
 
-        <div class="hero__event-right">
-          <strong>2–3 August 2025</strong>
-          <span>Sat–Sun | 10AM – 6PM</span>
+        <div class="gallery-col col-3">
+          <img src="./assets/images/img-1.jpg">
+          <img src="./assets/images/img-2.jpg">
+          <img src="./assets/images/img-3.jpg">
+          <img src="./assets/images/img-1.jpg">
+          <img src="./assets/images/img-2.jpg">
+          <img src="./assets/images/img-3.jpg">
+        </div>
+
+      </div>
+
+
+
+      <!-- RIGHT FORM -->
+      <div class="hero__form" aria-label="Enquiry form">
+        <h2 class="hero__form-title">Enquire Now</h2>
+
+        <form>
+          <label class="visually-hidden" for="parent-name">Parent’s Name</label>
+          <input id="parent-name" type="text" placeholder="Parent’s Name" />
+
+          <label class="visually-hidden" for="phone">Phone number</label>
+          <input id="phone" type="tel" placeholder="Phone number" />
+
+          <label class="visually-hidden" for="grade">Grade</label>
+          <input id="grade" type="text" placeholder="Which grade are you looking for?" />
+
+          <button type="submit" class="hero__submit">
+            <span>SUBMIT</span>
+            <span class="hero__submit-icon">↗</span>
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="trust-schools">
+
+    <!-- TRUST STATS -->
+    <div class="trust-schools__stats">
+      <div class="trust-stat">
+        <span class="trust-stat__desc">Trusted by</span>
+        <span class="trust-stat__value">1 Million+</span>
+        <span class="trust-stat__label">Parents</span>
+      </div>
+
+      <div class="trust-stat">
+        <span class="trust-stat__value">22+</span>
+        <span class="trust-stat__label">Years</span>
+        <span class="trust-stat__desc">of Legacy</span>
+      </div>
+
+      <div class="trust-stat">
+        <span class="trust-stat__value">500+</span>
+        <span class="trust-stat__label">Participating</span>
+        <span class="trust-stat__desc">Schools</span>
+      </div>
+
+      <div class="trust-stat">
+        <span class="trust-stat__value">17 Cities</span>
+        <span class="trust-stat__desc">Across the Globe</span>
+      </div>
+    </div>
+
+
+    <!-- PARTICIPATING SCHOOLS -->
+    <h2 class="trust-schools__title">Participating Schools</h2>
+
+    <div class="schools-logos" aria-label="Participating school logos">
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-1.png" alt="Harrow International School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-2.png" alt="Shrewsbury International School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-3.png" alt="King’s College India" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-4.png" alt="Woodstock School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-5.png" alt="The Aga Khan Academy" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-6.png" alt="TISB" />
+      </div>
+
+      <!-- second row repeats -->
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-1.png" alt="Harrow International School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-2.png" alt="Shrewsbury International School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-3.png" alt="King’s College India" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-4.png" alt="Woodstock School" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-5.png" alt="The Aga Khan Academy" />
+      </div>
+      <div class="schools-logos__item">
+        <img src="./assets/images/school-6.png" alt="TISB" />
+      </div>
+    </div>
+  </section>
+
+  <section class="school-types">
+    <h2 class="school-types__title">Choose the School That Fits You Best</h2>
+
+    <div class="school-types__grid">
+      <div class="school-card">
+        <img src="./assets/images/type-1.jpg" alt="Pre-Schools & Early Learning Centres">
+        <div class="school-card__overlay">
+          <h3>Pre-Schools & Early Learning Centres</h3>
+          <p>Nurturing foundational skills for toddlers and pre-primary children.</p>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <img src="./assets/images/type-2.jpg" alt="K–12 CBSE Day Schools">
+        <div class="school-card__overlay">
+          <h3>K–12 CBSE Day Schools</h3>
+          <p>Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <img src="./assets/images/type-3.jpg" alt="Heritage to New-Age Schools">
+        <div class="school-card__overlay">
+          <h3>Heritage to New-Age Schools</h3>
+          <p>Time-tested schools to innovative pedagogy, tech enabled, future-ready schools.</p>
+        </div>
+      </div>
+
+      <div class="school-card">
+        <img src="./assets/images/type-4.jpg" alt="International Curriculum Schools">
+        <div class="school-card__overlay">
+          <h3>International Curriculum Schools</h3>
+          <p>Offering IB, Cambridge, Finnish and other global curricula.</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- CENTER IMAGES -->
-    <div class="hero__gallery" aria-hidden="true">
-      <div class="hero__image hero__image--tall">
-        <img src="images/img-1.jpg" alt="" />
-      </div>
-      <div class="hero__image hero__image--tall">
-        <img src="images/img-2.jpg" alt="" />
-      </div>
-      <div class="hero__image hero__image--tall">
-        <img src="images/img-3.jpg" alt="" />
-      </div>
+  <section class="appointment-cta">
+    <div class="appointment-cta__content">
+      <span class="appointment-cta__eyebrow">
+        Exciting Opportunities for Parents!
+      </span>
 
-      <div class="hero__image hero__image--short">
-        <img src="images/img-4.jpg" alt="" />
-      </div>
-      <div class="hero__image hero__image--short">
-        <img src="images/img-5.jpg" alt="" />
-      </div>
-      <div class="hero__image hero__image--short">
-        <img src="images/img-6.jpg" alt="" />
-      </div>
+      <h2 class="appointment-cta__title">
+        Pre-schedule Your<br />
+        School Appointments
+      </h2>
+
+      <p class="appointment-cta__subtext">To Avoid Rush</p>
+
+      <a href="#" class="appointment-cta__btn">
+        <span class="appointment-cta__btn-icon">↗</span>
+        <span class="appointment-pre">        Pre-Schedule Now
+</span>
+      </a>
     </div>
 
-    <!-- RIGHT FORM -->
-    <aside class="hero__form" aria-label="Enquiry form">
-      <h2 class="hero__form-title">Enquire Now</h2>
-
-      <form>
-        <label class="visually-hidden" for="parent-name">Parent’s Name</label>
-        <input id="parent-name" type="text" placeholder="Parent’s Name" />
-
-        <label class="visually-hidden" for="phone">Phone number</label>
-        <input id="phone" type="tel" placeholder="Phone number" />
-
-        <label class="visually-hidden" for="grade">Grade</label>
-        <input id="grade" type="text" placeholder="Which grade are you looking for?" />
-
-        <button type="submit" class="hero__submit">
-          <span>Submit</span>
-          <span class="hero__submit-icon">↗</span>
-        </button>
-      </form>
-    </aside>
-
-  </div>
-</section>
-
-<section class="trust-schools">
-
-  <!-- TRUST STATS -->
- <div class="trust-schools__stats">
-  <div class="trust-stat">
-    <span class="trust-stat__desc">Trusted by</span>
-    <span class="trust-stat__value">1 Million+</span>
-    <span class="trust-stat__label">Parents</span>
-  </div>
-
-  <div class="trust-stat">
-    <span class="trust-stat__value">22+</span>
-    <span class="trust-stat__label">Years</span>
-    <span class="trust-stat__desc">of Legacy</span>
-  </div>
-
-  <div class="trust-stat">
-    <span class="trust-stat__value">500+</span>
-    <span class="trust-stat__label">Participating</span>
-    <span class="trust-stat__desc">Schools</span>
-  </div>
-
-  <div class="trust-stat">
-    <span class="trust-stat__value">17 Cities</span>
-    <span class="trust-stat__desc">Across the Globe</span>
-  </div>
-</div>
-
-
-  <!-- PARTICIPATING SCHOOLS -->
-  <h2 class="trust-schools__title">Participating Schools</h2>
-
-<div class="schools-logos" aria-label="Participating school logos">
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-1.png" alt="Harrow International School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-2.png" alt="Shrewsbury International School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-3.png" alt="King’s College India" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-4.png" alt="Woodstock School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-5.png" alt="The Aga Khan Academy" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-6.png" alt="TISB" />
-  </div>
-
-  <!-- second row repeats -->
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-1.png" alt="Harrow International School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-2.png" alt="Shrewsbury International School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-3.png" alt="King’s College India" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-4.png" alt="Woodstock School" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-5.png" alt="The Aga Khan Academy" />
-  </div>
-  <div class="schools-logos__item">
-    <img src="./assets/images/school-6.png" alt="TISB" />
-  </div>
-</div>
-</section>
-
-<section class="school-types">
-  <h2 class="school-types__title">Choose the School That Fits You Best</h2>
-
-  <div class="school-types__grid">
-    <div class="school-card">
-      <img src="./assets/images/type-1.jpg" alt="Pre-Schools & Early Learning Centres">
-      <div class="school-card__overlay">
-        <h3>Pre-Schools & Early Learning Centres</h3>
-        <p>Nurturing foundational skills for toddlers and pre-primary children.</p>
-      </div>
+    <div class="appointment-cta__image">
+      <img src="./assets/images/pre-schedule.jpg" alt="Parents discussing school appointments" />
     </div>
+  </section>
 
-    <div class="school-card">
-      <img src="./assets/images/type-2.jpg" alt="K–12 CBSE Day Schools">
-      <div class="school-card__overlay">
-        <h3>K–12 CBSE Day Schools</h3>
-        <p>Reputed schools offering complete schooling from Kindergarten to Grade 12.</p>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <img src="./assets/images/type-3.jpg" alt="Heritage to New-Age Schools">
-      <div class="school-card__overlay">
-        <h3>Heritage to New-Age Schools</h3>
-        <p>Time-tested schools to innovative pedagogy, tech enabled, future-ready schools.</p>
-      </div>
-    </div>
-
-    <div class="school-card">
-      <img src="./assets/images/type-4.jpg" alt="International Curriculum Schools">
-      <div class="school-card__overlay">
-        <h3>International Curriculum Schools</h3>
-        <p>Offering IB, Cambridge, Finnish and other global curricula.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="appointment-cta">
-  <div class="appointment-cta__content">
-    <span class="appointment-cta__eyebrow">
-      Exciting Opportunities for Parents!
-    </span>
-
-    <h2 class="appointment-cta__title">
-      Pre-schedule Your<br />
-      School Appointments
+  <section class="must-visit">
+    <h2 class="must-visit__title">
+      What Makes This Exhibition a Must-Visit
     </h2>
 
-    <p class="appointment-cta__subtext">To Avoid Rush</p>
+    <div class="must-visit__slider">
+      <div class="must-visit__track">
 
-    <a href="#" class="appointment-cta__btn">
-      <span class="appointment-cta__btn-icon">↗</span>
-      Pre-Schedule Now
-    </a>
-  </div>
+        <div class="must-visit__card">
+          <img src="./assets/images/icon1.svg" alt="" />
+          <h3>Interact Directly with School Heads</h3>
+          <p>Get answers straight from the experts</p>
+        </div>
 
-  <div class="appointment-cta__image">
-    <img
-      src="./assets/images/pre-schedule.jpg"
-      alt="Parents discussing school appointments"
-    />
-  </div>
-</section>
+        <div class="must-visit__card">
+          <img src="./assets/images/icon2.svg" alt="" />
+          <h3>Compare Curriculum & Pedagogy</h3>
+          <p>CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon3.svg" alt="" />
+          <h3>Get Exclusive Fee Structures & Offers</h3>
+          <p>Access transparent information and offers</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon4.svg" alt="" />
+          <h3>Explore Schools Offerings</h3>
+          <p>Infrastructure, culture & methodology</p>
+        </div>
+<div class="must-visit__card">
+          <img src="./assets/images/icon1.svg" alt="" />
+          <h3>Interact Directly with School Heads</h3>
+          <p>Get answers straight from the experts</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon2.svg" alt="" />
+          <h3>Compare Curriculum & Pedagogy</h3>
+          <p>CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon3.svg" alt="" />
+          <h3>Get Exclusive Fee Structures & Offers</h3>
+          <p>Access transparent information and offers</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon4.svg" alt="" />
+          <h3>Explore Schools Offerings</h3>
+          <p>Infrastructure, culture & methodology</p>
+        </div>
+<div class="must-visit__card">
+          <img src="./assets/images/icon1.svg" alt="" />
+          <h3>Interact Directly with School Heads</h3>
+          <p>Get answers straight from the experts</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon2.svg" alt="" />
+          <h3>Compare Curriculum & Pedagogy</h3>
+          <p>CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon3.svg" alt="" />
+          <h3>Get Exclusive Fee Structures & Offers</h3>
+          <p>Access transparent information and offers</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon4.svg" alt="" />
+          <h3>Explore Schools Offerings</h3>
+          <p>Infrastructure, culture & methodology</p>
+        </div>
+<div class="must-visit__card">
+          <img src="./assets/images/icon1.svg" alt="" />
+          <h3>Interact Directly with School Heads</h3>
+          <p>Get answers straight from the experts</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon2.svg" alt="" />
+          <h3>Compare Curriculum & Pedagogy</h3>
+          <p>CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon3.svg" alt="" />
+          <h3>Get Exclusive Fee Structures & Offers</h3>
+          <p>Access transparent information and offers</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon4.svg" alt="" />
+          <h3>Explore Schools Offerings</h3>
+          <p>Infrastructure, culture & methodology</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon1.svg" alt="" />
+          <h3>Interact Directly with School Heads</h3>
+          <p>Get answers straight from the experts</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon2.svg" alt="" />
+          <h3>Compare Curriculum & Pedagogy</h3>
+          <p>CBSE, ICSE, IB, Cambridge, Finnish & more</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon3.svg" alt="" />
+          <h3>Get Exclusive Fee Structures & Offers</h3>
+          <p>Access transparent information and offers</p>
+        </div>
+
+        <div class="must-visit__card">
+          <img src="./assets/images/icon4.svg" alt="" />
+          <h3>Explore Schools Offerings</h3>
+          <p>Infrastructure, culture & methodology</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="must-visit__controls">
+      <button class="ctrl prev" aria-label="Previous slide"><img src="./assets/images/right.svg" class="right-svg"/></button>
+
+      <div class="dots"></div>
+
+      <button class="ctrl next" aria-label="Next slide"><img src="./assets/images/leaft.svg" class="right-svg"/></button>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+
+      <!-- LOGO -->
+      <div class="site-footer__brand">
+        <img src="./assets/images/logo.svg" alt="Premier Schools Exhibition Logo" class="site-footer__logo" />
+      </div>
+
+      <!-- CORPORATE OFFICE -->
+      <div class="site-footer__block">
+        <div class="site-footer__icon"><img src="./assets/images/location.svg"/></div>
+        <div>
+          <h3 class="site-footer__title">Corporate Office:</h3>
+          <p>
+            Suite B-5, Ballygunge Park Tower,
+            67B Ballygunge Circular Road,
+            Kolkata - 700019
+          </p>
+        </div>
+      </div>
+
+      <!-- AHMEDABAD OFFICE -->
+      <div class="site-footer__block">
+        <div class="site-footer__icon"><img src="./assets/images/location.svg"/></div>
+        <div>
+          <h3 class="site-footer__title">Ahmedabad Office:</h3>
+          <p>
+            12/AA, Swastik Chambers, Near CU
+            Shah College, Ashram Road,
+            Ahmedabad - 380009
+          </p>
+        </div>
+      </div>
+
+      <!-- CALL -->
+      <div class="site-footer__block">
+        <div class="site-footer__icon"><img src="./assets/images/phone.svg"/></div>
+        <div>
+          <h3 class="site-footer__title">Call us on</h3>
+          <p>
+            <a href="tel:9674805912">9674805912</a><br />
+            <a href="tel:9674585012">9674585012</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="site-footer__social">
+        <h3 class="site-footer__title">Follow us on</h3>
+
+        <div class="site-footer__social-icons">
+          <a href="#" aria-label="Instagram"><img src="./assets/images/instagram.svg"/></a>
+          <a href="#" aria-label="Facebook"><img src="./assets/images/fafabook.svg"/></a>
+          <a href="#" aria-label="YouTube"><img src="./assets/images/youtob.svg"/></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="site-footer__bottom">
+      Copyright © 2025 | All rights reserved. Premier Schools Exhibition
+    </div>
+  </footer>
+
 
 
 </body>
+
 </html>
