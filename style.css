@@ -904,6 +904,7 @@ body {
 
   .header-section .appointment-cta__btn {
     gap: 0px;
+    margin: 0px;
   }
 
   .header-section .appointment-cta__btn-icon {
