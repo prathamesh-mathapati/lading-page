@@ -19,13 +19,18 @@ body {
 }
 
 .header {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   display: flex;
   justify-content: end;
   align-items: center;
   position: relative;
-  padding: 10px 0px;
+  /* padding: 10px 5rem; */
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 .header .btn {
@@ -50,7 +55,7 @@ body {
   width: 200px;
   height: max-content;
   position: absolute;
-  left: 0;
+  left: 5rem;
   bottom: -90px;
 }
 
@@ -61,7 +66,9 @@ body {
 }
 
 .hero-section {
-  max-width: 1280px;
+  /* max-width: 1920px; */
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 1.2fr 0.9fr;
@@ -265,21 +272,25 @@ button {
   padding: 4rem 1rem 3rem;
   background: #ffffff;
   text-align: center;
+   padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .trust-stats {
-  max-width: 1100px;
-  margin: 0 auto 4rem;
+  /* margin: 0 auto 4rem; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   align-items: center;
+  padding-bottom: 5rem;
+    justify-content: center;
 }
 
 .trust-stat {
   position: relative;
   padding: 10px 20px;
   text-align: center;
+  width: 70%;
 }
 
 .trust-stat::before,
@@ -346,11 +357,12 @@ button {
 }
 
 .logos {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
+
 }
 
 .logos-item {
@@ -391,11 +403,13 @@ button {
 }
 
 .types-grid {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+   padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .card {
@@ -600,7 +614,7 @@ button {
   background-image: url('./assets/images/BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: bottom;
   color: #fff;
   position: relative;
   margin-bottom: 60px;
@@ -911,7 +925,21 @@ button {
     padding: 8px;
     font-size: 10px;
   }
-
+  .hero-section{
+ padding-left: 1rem;
+  padding-right: 1rem;
+  }
+.trust{
+   padding-left: 1rem;
+  padding-right: 1rem;
+}
+.fade-up.show{
+  margin: auto;
+}
+.types-grid{
+   padding-left: 1rem;
+  padding-right: 1rem;
+}
   .btn-text {
     font-size: 14px;
   }
