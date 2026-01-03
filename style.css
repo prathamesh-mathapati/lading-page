@@ -945,7 +945,7 @@ button {
 
   .header img {
     position: static;
-    width: 60px;
+    width: 60px !important;
   }
 
   .header .btn {
