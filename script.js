@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let w = cards[0].offsetWidth + 32;
   let autoplayInterval;
 
-  // Create dots
   cards.forEach((_, idx) => {
     const d = document.createElement("span");
     d.className = "dot" + (idx === 0 ? " active" : "");
@@ -126,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Auto-play
   function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 3000); // 3 seconds
+    autoplayInterval = setInterval(nextSlide, 3000); 
   }
 
   function resetAutoplay() {

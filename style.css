@@ -143,13 +143,12 @@ body {
 }
 
 .gallery img {
-  width: 134px;
   border-radius: 999px;
   object-fit: cover;
 }
 
 .slider-wrapper {
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .gallery {
@@ -171,8 +170,9 @@ body {
 }
 
 .gallery img {
-  width: 134px;
-  border-radius: 999px;
+  width: 200px;
+  height: 440px;
+    border-radius: 999px;
   object-fit: cover;
 }
 
