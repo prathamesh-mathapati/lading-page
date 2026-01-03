@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
@@ -19,13 +20,47 @@ body {
 }
 
 .header {
-  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: end;
   align-items: center;
-  position: relative;
-  padding: 10px 0px;
+  position: fixed;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 99;
+  background-color: #fff;
+  width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: #1a0b3d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.header .btn-n {
+  display: none;
+}
+
+.header.scrolled .btn-n {
+  display: flex !important;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  gap: 0px;
+}
+
+.header.scrolled .btn-icon {
+  background-color: #FFF !important;
+  color: #07021c;
+}
+
+.header.scrolled .btn {
+  display: none;
 }
 
 .header .btn {
@@ -50,8 +85,15 @@ body {
   width: 200px;
   height: max-content;
   position: absolute;
-  left: 0;
+  left: 5rem;
   bottom: -90px;
+  transition: width 0.3s ease, bottom 0.3s ease;
+}
+
+.header.scrolled img {
+  width: 150px;
+  bottom: -70px;
+  /* Adjust if needed to align nicely in reduced header */
 }
 
 .hero {
@@ -61,7 +103,8 @@ body {
 }
 
 .hero-section {
-  max-width: 1280px;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 1.2fr 0.9fr;
@@ -265,21 +308,25 @@ button {
   padding: 4rem 1rem 3rem;
   background: #ffffff;
   text-align: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
 }
 
 .trust-stats {
-  max-width: 1100px;
-  margin: 0 auto 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   align-items: center;
+  padding-bottom: 5rem;
+  justify-content: center;
 }
 
 .trust-stat {
   position: relative;
   padding: 10px 20px;
   text-align: center;
+  width: 70%;
 }
 
 .trust-stat::before,
@@ -346,7 +393,6 @@ button {
 }
 
 .logos {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -391,7 +437,7 @@ button {
 }
 
 .types-grid {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -600,7 +646,7 @@ button {
   background-image: url('./assets/images/BG.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: bottom;
   color: #fff;
   position: relative;
   margin-bottom: 60px;
@@ -925,6 +971,25 @@ button {
     gap: 2rem;
   }
 
+  .hero-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .trust {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fade-up.show {
+    margin: auto;
+  }
+
+  .types-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .hero-title {
     font-size: 28px;
   }
@@ -958,7 +1023,8 @@ button {
   .gallery img {
     width: 80px;
   }
-  .gallery-track{
+
+  .gallery-track {
     margin: auto;
   }
 
@@ -1017,13 +1083,16 @@ button {
     width: 210px;
     padding: 10px;
   }
-  .trust-stats{
+
+  .trust-stats {
     gap: 64px;
   }
-  .types{
+
+  .types {
     padding: 20px 25px;
   }
-  .types-grid{
+
+  .types-grid {
     gap: 20px;
   }
 
